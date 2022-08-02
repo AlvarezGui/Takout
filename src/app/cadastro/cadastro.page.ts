@@ -14,6 +14,9 @@ export class CadastroPage implements OnInit {
     this.rota.navigateByUrl(`/log-in`)
   }
 
+  abrirPaginaHome(){
+    this.rota.navigateByUrl(`/home`)
+  }
 
   ngOnInit() {
   }
