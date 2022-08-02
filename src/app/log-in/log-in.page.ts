@@ -19,7 +19,7 @@ export class LogInPage {
   }
 
   abrirPaginaHome(){
-    this.rota.navigateByUrl(`/home`)
+    this.rota.navigateByUrl(`/tabs/home`)
   }
 
 }
