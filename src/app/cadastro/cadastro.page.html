@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="">
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <h1 class="titulo"><b>Sign up</b></h1>
+
+    <ion-label class="titulo2">Nome</ion-label>
+    <ion-input placeholder="seunome" fill="outline" type="text" class="input"></ion-input>
+
+    <ion-label class="titulo2">Email</ion-label>
+    <ion-input placeholder="seuemail@email.com" fill="outline" type="email" class="input"></ion-input>
+
+    <ion-label class="titulo2">Senha</ion-label>
+    <ion-input placeholder="Crie uma senha" fill="outline" type="password" class="input"></ion-input>
+
+    <ion-input placeholder="Confirme a sua senha" fill="outline" type="password" class="input"></ion-input>
+
+    <ion-item class="fbranco">
+      <ion-label class="tdu" text-wrap>Eu li e concordo com os Termos e Condições e com a Politica de Privacidade.</ion-label>
+      <ion-checkbox class="peto" slot="start" mode="ios"></ion-checkbox>
+    </ion-item>
+
+    <ion-button expand="block" mode="md" class="butao">Criar</ion-button>
+
+    <ion-label class="footer">Já possui uma conta?<a (click)="abrirPaginaLogin()">Faça login</a></ion-label>
+
+  </div>
+
+</ion-content>

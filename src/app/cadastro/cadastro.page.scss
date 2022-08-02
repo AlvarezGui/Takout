@@ -1,0 +1,81 @@
+*{
+    --ion-background-color: #ffff;
+    --ion-text-color: #000000;
+  }
+
+  .voltar{
+    --ion-background-color: #1875F9;
+  }
+
+  #container {
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #8c8c8c;
+
+    margin: 0;
+  }
+
+  #container a {
+    text-decoration: none;
+  }
+
+
+  .titulo{
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 6%;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .butao{
+    margin-top: 5%;
+    margin-left:5% ;
+    margin-right:5% ;
+  }
+
+  .footer{
+    font-size: small;
+  }
+
+  .titulo2{
+    margin-top: 10%;
+    margin-right: 70%;
+  }
+
+  ion-input{
+    text-align: start;
+    border: solid 1px #f7f7f7;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    max-width: 90%; // <--- Felicidade genuina
+ }
+
+ .fbranco{
+  --ion-item-background:#ffff;
+}
+
+.peto{
+  border: solid 1px #727272;
+}
+
+.tdu{
+  font-size: small;
+}

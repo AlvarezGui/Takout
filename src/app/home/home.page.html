@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="home.page.scss">
+
+
+<ion-content [fullscreen]="true">
+  <img class="ftprincipal" src="../../assets/img/ImgFundo.png" alt="Imagem">
+  
+  <div id="container" class="fundo1">
+    <h1 class="titulo"><b>Log in</b></h1>
+
+    <ion-input placeholder="seuemail@email.com" type="email" ></ion-input>
+
+    <ion-input placeholder="Insira sua senha" type="password" ></ion-input>
+    
+
+    <ion-button expand="block" mode="ios" class="butao">Entrar</ion-button>
+
+    <ion-label><a (click)="abrirPaginaRecuperar()">Esqueceu a senha ?</a></ion-label>
+
+    <ion-label>Não tem uma conta ?<a (click)="abrirPaginaCadastro()">Cadastre-se</a></ion-label>
+
+  </div>
+
+  
+
+</ion-content>
