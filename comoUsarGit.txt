@@ -2,8 +2,8 @@ clonar o repositório com: git clone <código HTTPS do repositório>
 abra o git bash na pasta do projeto
 use: git init
 trabalhe
+use: git add . - para adicionar os arquivos modificados
 quando acabar use: git commit -m "<mensagem do que vc mudou>"
-use: git add . // para adicionar os arquivos modificados
-use: git push // para colocar no github
+use: git push - para colocar no github
 
 pronto :)
