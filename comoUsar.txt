@@ -7,3 +7,6 @@ quando acabar use: git commit -m "<mensagem do que vc mudou>"
 use: git push - para colocar no github
 
 pronto :)
+
+
+(Se tudo der errado: git push -f origin master)
