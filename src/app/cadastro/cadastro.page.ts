@@ -11,7 +11,7 @@ export class CadastroPage implements OnInit {
   constructor(private rota: Router) { }
 
   abrirPaginaLogin(){
-    this.rota.navigateByUrl(`/login`)
+    this.rota.navigateByUrl(`/log-in`)
   }
 
 

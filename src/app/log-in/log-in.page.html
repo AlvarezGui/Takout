@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="home.page.scss">
+<link rel="stylesheet" href="log-in.page.scss">
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
 <ion-content [fullscreen]="true">
@@ -12,7 +12,7 @@
     <ion-input placeholder="Insira sua senha" type="password" ></ion-input>
     <ion-label><a (click)="abrirPaginaRecuperar()" class="esenha" >Esqueceu a senha ?</a></ion-label>
 
-    <ion-button expand="block" mode="ios" class="butao">Entrar</ion-button>
+    <ion-button expand="block" mode="ios" class="butao" (click)="abrirPaginaHome()">Entrar</ion-button>
 
     <ion-label class="cad">Não tem uma conta ?<a (click)="abrirPaginaCadastro()">Cadastre-se</a></ion-label>
 
