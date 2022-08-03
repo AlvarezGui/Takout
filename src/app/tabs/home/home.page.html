@@ -3,14 +3,14 @@
 <ion-content [fullscreen] = "false">
   <img src="../../assets/img/takout.png" alt="Imagen" class="imgTitulo">
 
-  <h5 id="titulo">Ao seu redor</h5>
+  <h5 class="titulo1">Ao seu redor</h5>
 
   <ion-button class="placeHolder" color="medium">PLACE HOLDER</ion-button>
 
-   <h5 id="titulo" >Categorias</h5> <h6 id="verMais"><a href="">Ver mais</a></h6>
+   <h5 class="titulo2" >Categorias</h5> <h6 id="verMais"><a href="">Ver mais</a></h6>
 
 
-  <ion-list class="lista1">
+  <div class="lista1">
 
     <div>
       <ion-fab-button class="placeHolderCat" color="medium" size="large" shape="round"></ion-fab-button>
@@ -32,11 +32,16 @@
       <ion-label class="catLaber">Categoria</ion-label>
     </div>
 
-  </ion-list>
+    <div class="cat">
+      <ion-fab-button class="placeHolderCat" color="medium" size="large" shape="round"></ion-fab-button>
+      <ion-label class="catLaber">Categoria</ion-label>
+    </div>
 
-  <h5 id="titulo">Mais vendidos</h5> <h6 id="verMais"><a href="">Ver mais</a></h6>
+  </div>
 
-  <ion-list class="lista2">
+  <h5 class="titulo2">Mais vendidos</h5> <h6 id="verMais"><a href="">Ver mais</a></h6>
+
+  <div class="lista2">
 
     <ion-card>
       <ion-button class="placeHolderMV" color="medium">PLACE HOLDER</ion-button>
@@ -70,6 +75,6 @@
       </ion-card-header>
     </ion-card>
 
-  </ion-list>
+  </div>
 
 </ion-content>

@@ -10,8 +10,17 @@
   margin-top: 5%;
 }
 
-#titulo{
+.titulo1{
   margin-left: 10%;
+}
+
+.titulo2{
+  margin-left: 10%;
+  margin-bottom: -11%;
+}
+
+.diviTi{
+  display: flex;
 }
 
 #verMais{
@@ -31,9 +40,17 @@
 }
 
 .lista1{
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: space-around;
+  -webkit-overflow-scrolling: touch;
+
+  .cat{
+      flex: 0 0 auto;
+  }
 }
+
 
 ion-card{
   width: 130px;
