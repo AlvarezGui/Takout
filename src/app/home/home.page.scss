@@ -14,9 +14,33 @@
   margin-left: 10%;
 }
 
-.placeHolder1{
+.placeHolder{
   margin-left: 10%;
   width: 238px;
   height: 123px;
 
+}
+
+.placeHolderCat{
+  margin-bottom: 5%;
+}
+
+.lista1{
+    display: flex;
+    justify-content: space-around;
+}
+
+ion-card{
+  width: 110px;
+  height: 200px;
+  border-radius: 15%;
+}
+
+.placeHolderMV{
+  width: 238px;
+  height: 123px;
+}
+
+.lista2{
+  display: flex;
 }
