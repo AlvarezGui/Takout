@@ -6,7 +6,25 @@
 .titulo{
   margin-bottom: -9.5%;
   margin-top: 15%;
-  margin-left: 22%;
+  margin-left: 32%;
+}
+
+.fp{
+  --ion-item-background: rgb(201, 201, 201);
+}
+
+.add{
+  margin-left: 45%;
+}
+
+#pag{
+  margin-top: 5%;
+  border: solid 1px rgb(167, 167, 167);
+  border-radius: 10px;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  max-width: 90%; // <--- Felicidade genuina
+  --ion-item-background: #ffff;
 }
 
 .seta{
