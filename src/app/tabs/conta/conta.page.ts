@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-conta',
@@ -7,7 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContaPage implements OnInit {
 
-  constructor() { }
+  constructor(public alertController: AlertController, private rota: Router) { }
+
+  async exibirAlertaSair(){
+    const alert = await this.alertController.create({
+      header: 'Sair',
+      message: 'Você deseja sair ?',
+      buttons: [
+        {
+          text: 'Sair',
+          handler: () => {
+            this.rota.navigateByUrl(`/log-in`)
+          }
+        }, {
+          text: 'Cancelar',
+          role: 'cancel',
+        }
+      ]
+    });
+
+    await alert.present();
+  }
 
   ngOnInit() {
   }
