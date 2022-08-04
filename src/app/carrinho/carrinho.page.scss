@@ -1,0 +1,38 @@
+*{
+    --ion-background-color: #ffff;
+    --ion-text-color: #000000;
+}
+
+.titulo{
+    margin-bottom: -9.5%;
+    margin-top: 15%;
+    margin-left: 36%;
+}
+
+.seta{
+    list-style: none;
+    margin-left: 5%;
+}
+
+.titulo2{
+    margin-top: 20%;
+    margin-left: 7%;
+}
+
+.titulo3{
+    margin-left: 7%;
+}
+
+
+ion-item{
+    --ion-item-background: #ffff;
+}
+
+.carrinho{
+  --ion-item-background: rgb(167, 167, 167);
+  border: solid 1px rgb(167, 167, 167);
+  border-radius: 10px;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  max-width: 90%; // <--- Felicidade genuina
+}

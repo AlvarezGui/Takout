@@ -1,16 +1,16 @@
 <link rel="stylesheet" href="./pagamentos.page.scss">
 
-<ion-content [fullscreen]="false">
+<ion-content [fullscreen]="true">
 
   <h3 class="titulo">Pagamento</h3>
-  <a href="/tabs/conta"><ion-icon name="arrow-back-outline" class="seta" size="large" color="dark"></ion-icon></a>
+  <ion-icon name="arrow-back-outline" class="seta" size="large" (click)="voltarConta()"></ion-icon>
 
-  <ion-item class="fp">
+  <ion-item class="fp" lines="none">
     <ion-label>Formas de pagamento</ion-label>
   </ion-item>
 
   <ion-item id="pag" lines="none">
     <ion-icon name="add-outline" class="add"></ion-icon>
   </ion-item>
-
+ 
 </ion-content>

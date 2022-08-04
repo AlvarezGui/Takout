@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="./carrinho.page.scss">
+
+<ion-content [fullscreen]="true">
+
+  <h3 class="titulo">Carrinho</h3>
+  <ion-icon name="arrow-back-outline" class="seta" size="large" (click)="voltarHome()"></ion-icon>
+
+  <h5 class="titulo2">Detalhes</h5>
+
+  <ion-item lines="none" class="carrinho">  
+      <ion-label text-wrap>O carrinho está vazio :( Ir para o <a href="/tabs/home">catalogo de lojas</a></ion-label>
+  </ion-item>
+
+  <h5 class="titulo3">Método de pagamento</h5>
+
+  <ion-item>
+    <ion-label>
+      <ion-icon name="wallet-outline"></ion-icon>
+      Escolha seu método de pagamento
+    </ion-label>
+    <ion-icon name="chevron-forward" color="medium"></ion-icon>
+  </ion-item>
+
+</ion-content>
