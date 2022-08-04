@@ -19,6 +19,10 @@ const routes: Routes = [
         path: 'pesquisa',
         loadChildren: () => import('./pesquisa/pesquisa.module').then( m => m.PesquisaPageModule)
       },
+      {
+        path: 'conta',
+        loadChildren: () => import('../tabs/conta/conta.module').then( m => m.ContaPageModule)
+      },
     ]
   },
 ];

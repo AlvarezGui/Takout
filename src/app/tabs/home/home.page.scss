@@ -10,6 +10,14 @@
   margin-top: 5%;
 }
 
+.carrinho{
+  text-decoration: none;
+  height: 10%;
+  width: 10%;
+  margin-left: 14%;
+  margin-bottom: -3.5%;
+}
+
 .titulo1{
   margin-left: 10%;
 }
@@ -53,8 +61,8 @@
 
 
 ion-card{
-  width: 130px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   border-radius: 15%;
 }
 
@@ -67,4 +75,6 @@ ion-card{
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
+  overflow-x: auto;
+
 }
