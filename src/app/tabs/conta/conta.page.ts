@@ -11,6 +11,11 @@ export class ContaPage implements OnInit {
 
   constructor(public alertController: AlertController, private rota: Router) { }
 
+
+  async abrirPaginaPagamentos(){
+    this.rota.navigateByUrl(`/pagamentos`)
+  }
+
   async exibirAlertaSair(){
     const alert = await this.alertController.create({
       header: 'Sair',
