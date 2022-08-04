@@ -1,9 +1,63 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>menu</ion-title>
-  </ion-toolbar>
-</ion-header>
+<link rel="stylesheet" href="./menu.page.scss">
 
-<ion-content>
+<ion-content [fullscreen]="false">
+
+  <h3 class="titulo"><b>O que você procura ?</b></h3>
+
+  <ion-item lines="none">
+    <ion-input fill="outline" type="text">
+      <ion-icon name="search-outline" color="primary" class="lupa"></ion-icon>
+    </ion-input>
+
+    <ion-button class="btnFiltro" color="light">
+      <ion-icon name="funnel-outline" color="primary"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <h3 id="titulos"><b>Pesquisas anteriores</b></h3>
+
+  <ion-item lines="none">
+    <ion-button class="btnPR" color="medium">
+      <ion-label text-wrap>
+        AQUI FICA AS SUAS PESQUISAS ANTERIORES
+      </ion-label>
+    </ion-button>
+  </ion-item>
+
+  <h3 id="titulos"><b>Mais pesquisados</b></h3>
+
+  <div class="lista">
+    <ion-card>
+      <ion-button class="placeHolderMP" color="medium">PLACE HOLDER</ion-button>
+      <ion-card-header>
+        <ion-card-subtitle>Produto 1</ion-card-subtitle>
+        <ion-card-title>R$ 9.99</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card>
+      <ion-button class="placeHolderMP" color="medium">PLACE HOLDER</ion-button>
+      <ion-card-header>
+        <ion-card-subtitle>Produto 2</ion-card-subtitle>
+        <ion-card-title>R$ 9.99</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card>
+      <ion-button class="placeHolderMP" color="medium">PLACE HOLDER</ion-button>
+      <ion-card-header>
+        <ion-card-subtitle>Produto 2</ion-card-subtitle>
+        <ion-card-title>R$ 9.99</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card>
+      <ion-button class="placeHolderMP" color="medium">PLACE HOLDER</ion-button>
+      <ion-card-header>
+        <ion-card-subtitle>Produto 2</ion-card-subtitle>
+        <ion-card-title>R$ 9.99</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </div>
 
 </ion-content>
