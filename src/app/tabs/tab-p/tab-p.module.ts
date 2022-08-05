@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PesquisaPageRoutingModule } from './pesquisa-routing.module';
+import { TabPPageRoutingModule } from './tab-p-routing.module';
 
-import { PesquisaPage } from './pesquisa.page';
+import { TabPPage } from './tab-p.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PesquisaPageRoutingModule
+    TabPPageRoutingModule
   ],
-  declarations: [PesquisaPage]
+  declarations: [TabPPage]
 })
-export class PesquisaPageModule {}
+export class TabPPageModule {}
