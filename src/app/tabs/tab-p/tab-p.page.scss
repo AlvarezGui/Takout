@@ -1,11 +1,23 @@
 *{
-  --ion-background-color: #ffff;
   --ion-text-color: #000000;
 }
 
 .titulo{
-  margin-top: 50%;
   margin-left: 29%;
+  margin-top: 18%;
+}
+
+ion-tabs{
+
+  margin-left: 5%;
+  max-width: 90%;
+  margin-top: 30%;
+}
+
+.funciona{
+  border: solid 1px #9B9B9B;
+  border-radius: 10px;
+  margin-top: 10%;
 }
 
 .butoes{
