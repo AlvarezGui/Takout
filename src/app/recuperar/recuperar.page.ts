@@ -14,7 +14,11 @@ export class RecuperarPage implements OnInit {
     this.rota.navigateByUrl(`/codigo`)
   }
 
-  ngOnInit() {
+  voltarLogin(){
+    this.rota.navigateByUrl(`/log-in`)
   }
+
+  ngOnInit() {
+  } 
 
 }

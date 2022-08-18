@@ -15,6 +15,7 @@ export class NovaSenhaPage implements OnInit {
   }
 
 
+
   ngOnInit() {
   }
 

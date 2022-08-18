@@ -40,6 +40,7 @@ const routes: Routes = [
     loadChildren: () => import('./carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
   },
 
+
 ];
 
 @NgModule({

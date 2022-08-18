@@ -19,4 +19,8 @@ export class CodigoPage implements OnInit {
     this.rota.navigateByUrl(`/nova-senha`)
   }
 
+  voltarRec(){
+    this.rota.navigateByUrl(`/recuperar`)
+  }
+
 }

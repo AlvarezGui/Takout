@@ -6,11 +6,11 @@
 
 <ion-tabs>
   <ion-tab-bar slot="top" color="medium" class="funciona">
-    <ion-tab-button tab="pedidos">
+    <ion-tab-button tab="pedidos" class="butao" [ngClass]="isClicked() ? 'btnCinza': 'btn' "(click)="onClick()">
       <ion-label>Ativos</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="menu">
+    <ion-tab-button tab="historico" class="butao" [ngClass]="isClicked2() ? 'btnCinza': 'btn' "(click)="onClick2()">
       <ion-label>Histórico</ion-label>
     </ion-tab-button>
 

@@ -7,8 +7,10 @@ ion-toolbar{
   --background: white;
 }
 
-.vorta{
-  --background: white;
+.seta{
+  list-style: none;
+  margin-left: 7%;
+  margin-top: 5%;
 }
 
 #container {
@@ -40,6 +42,7 @@ ion-toolbar{
   }
 
 .ftprincipal{
+    margin-left: 2%;
     margin-top: 25%;
     position: absolute;
     left: .1%;

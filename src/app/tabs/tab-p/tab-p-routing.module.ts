@@ -12,6 +12,10 @@ const routes: Routes = [
         path: 'pedidos',
         loadChildren: () => import('../tab-p/pedidos/pedidos.module').then( m => m.PedidosPageModule)
       },
+      {
+        path: 'historico',
+        loadChildren: () => import('../tab-p/historico/historico.module').then( m => m.HistoricoPageModule)
+      },
     ]
   }
 ];

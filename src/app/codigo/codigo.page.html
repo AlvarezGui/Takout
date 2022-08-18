@@ -1,14 +1,8 @@
 <link rel="stylesheet" href="./codigo.page.scss">
 
-<ion-header [fullscreen]="true">
-  <ion-toolbar>
-    <ion-button slot="start" class="vorta" mode="md" defaultHref="login">
-      <ion-back-button></ion-back-button> 
-    </ion-button>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fulscreen]="true">
+
+  <ion-icon name="arrow-back-outline" class="seta" size="large" (click)="voltarRec()"></ion-icon>
 
   <div id="container" class="fundo1">
     <ion-label class="paragrafo">Um código foi enviado para o seu email</ion-label>
