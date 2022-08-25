@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router'; 
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-log-in',
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class LogInPage {
 
-  constructor(private rota: Router) {}
+  constructor(private rota: Router) { }
 
   abrirPaginaCadastro(){
     this.rota.navigateByUrl(`/cadastro`)

@@ -7,9 +7,16 @@
   <div id="container" class="fundo1">
     <h1 class="titulo"><b>Bem-Vindo!</b></h1>
 
-    <ion-input placeholder="seuemail@email.com" type="email" ></ion-input>
+  <form>
+    <ion-input placeholder="seuemail@email.com" type="email" >
+      <ion-icon class="icones" name="mail" color="medium"></ion-icon>
+    </ion-input>
 
-    <ion-input placeholder="Insira sua senha" type="password" ></ion-input>
+    <ion-input placeholder="Insira sua senha" type="password" >
+      <ion-icon class="icones" name="lock-closed" color="medium"></ion-icon>
+    </ion-input>
+  </form>
+
     <ion-label><a (click)="abrirPaginaRecuperar()" class="esenha" >Esqueceu a senha ?</a></ion-label>
 
     <ion-button expand="block" mode="ios" class="butao" (click)="abrirPaginaHome()">Entrar</ion-button>

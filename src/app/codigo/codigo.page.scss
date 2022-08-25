@@ -6,38 +6,38 @@
   ion-toolbar{
     --background: white;
   }
-  
+
   .seta{
     list-style: none;
     margin-left: 7%;
     margin-top: 5%;
   }
-  
-  
+
+
   #container {
     text-align: center;
-  
+
     position: absolute;
     left: 0;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
   }
-  
+
   #container strong {
     font-size: 20px;
     line-height: 26px;
   }
-  
+
   #container p {
     font-size: 16px;
     line-height: 22px;
-  
+
     color: #8c8c8c;
-  
+
     margin: 0;
   }
-  
+
   #container a {
     text-decoration: none;
   }
@@ -53,11 +53,16 @@ ion-list{
 }
 
 ion-input{
-  border: solid 1px #9B9B9B;
+  background-color: #d1d1d1;
+  border: solid 1px #d1d1d1;
   border-radius: 10px;
   margin-left: 5%;
   margin-right: 4%;
   max-width: 30%; // <--- Felicidade genuina
 }
 
+.butao{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
