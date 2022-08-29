@@ -1,6 +1,17 @@
 *{
   --ion-background-color: #ffff;
   --ion-text-color: #000000;
+   background-color: #ffff;
+   // overwrite inline styles
+   --offset-bottom: auto!important;
+   --overflow: hidden;
+   overflow: auto;
+   --overflow: hidden;
+
+  
+   &::-webkit-scrollbar {
+     display: none;
+   }
 }
 
 .titulo{
