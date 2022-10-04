@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebase: {
+  firebaseConfig: {
     apiKey: 'AIzaSyCdqiWhljCiacIirLqEtz9YSq-7e2SwS6g',
     authDomain: 'takout-16f62.firebaseapp.com',
     projectId: 'takout-16f62',
