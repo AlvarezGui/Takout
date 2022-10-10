@@ -1,4 +1,5 @@
 *{
+  --ion-font-family: 'Poppins';
   --ion-background-color: white;
   --ion-text-color: #000000;
 }
@@ -15,7 +16,6 @@ ion-toolbar{
 
 #container {
     text-align: center;
-
     position: absolute;
     left: 0;
     right: 0;
@@ -56,21 +56,23 @@ ion-toolbar{
 }
 
 .paragrafo{
-    color: #8C8C9A;
+    margin-top: 8px;
+    color: #9B8989;
     font-size: small;
 }
 
 .butao{
+  margin-top: 32px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 ion-input{
     text-align: start;
-    background-color: #d1d1d1;
-    border: solid 1px #d1d1d1;
+    background-color: rgba(173, 173, 173, 10%);
+    border: solid 1px rgba(173, 173, 173, 10%);
     border-radius: 10px;
-    margin-top: 10%;
+    margin-top: 24px;
     margin-bottom: 15%;
     margin-left: 5%;
     max-width: 90%; // <--- Felicidade genuina

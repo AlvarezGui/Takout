@@ -11,14 +11,14 @@ export class RecuperarPage implements OnInit {
   constructor(private rota: Router) { }
 
   abrirPaginaCodigo(){
-    this.rota.navigateByUrl(`/codigo`)
+    this.rota.navigateByUrl(`/codigo`);
   }
 
   voltarLogin(){
-    this.rota.navigateByUrl(`/log-in`)
+    this.rota.navigateByUrl(`/log-in`);
   }
 
   ngOnInit() {
-  } 
+  }
 
 }

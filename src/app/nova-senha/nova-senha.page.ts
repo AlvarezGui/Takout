@@ -11,7 +11,7 @@ export class NovaSenhaPage implements OnInit {
   constructor(private rota: Router) { }
 
   abrirPaginaLogin(){
-    this.rota.navigateByUrl(`/log-in`)
+    this.rota.navigateByUrl(`/log-in`);
   }
 
 

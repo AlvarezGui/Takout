@@ -8,22 +8,20 @@
     <h1 class="titulo"><b>Bem-Vindo!</b></h1>
 
   <form>
-    <ion-input placeholder="seuemail@email.com" type="email" >
+    <ion-input placeholder="seuemail@email.com" type="email" mode="md" >
       <ion-icon class="icones" name="mail" color="medium"></ion-icon>
     </ion-input>
 
-    <ion-input placeholder="Insira sua senha" type="password" >
+    <ion-input placeholder="Insira sua senha" type="password" mode="md" >
       <ion-icon class="icones" name="lock-closed" color="medium"></ion-icon>
     </ion-input>
   </form>
 
-    <ion-label><a (click)="abrirPaginaRecuperar()" class="esenha" >Esqueceu a senha ?</a></ion-label>
+    <ion-label><div class="esenha"><a (click)="abrirPaginaRecuperar()" >Esqueceu a senha?</a></div></ion-label>
 
     <ion-button expand="block" mode="ios" class="butao" (click)="abrirPaginaHome()">Entrar</ion-button>
 
-    <ion-label class="cad">Não tem uma conta ?<a (click)="abrirPaginaCadastro()">Cadastre-se</a></ion-label>
-
-    <p class="google">Ou continue com </p>
+    <ion-label><div class="cad">Não tem uma conta?<a (click)="abrirPaginaCadastro()">Cadastre-se</a></div></ion-label>
 
   </div>
 

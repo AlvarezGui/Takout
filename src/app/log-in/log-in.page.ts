@@ -11,15 +11,15 @@ export class LogInPage {
   constructor(private rota: Router) { }
 
   abrirPaginaCadastro(){
-    this.rota.navigateByUrl(`/cadastro`)
+    this.rota.navigateByUrl(`/cadastro`);
   }
 
   abrirPaginaRecuperar(){
-    this.rota.navigateByUrl(`/recuperar`)
+    this.rota.navigateByUrl(`/recuperar`);
   }
 
   abrirPaginaHome(){
-    this.rota.navigateByUrl(`/tabs/home`)
+    this.rota.navigateByUrl(`/tabs/home`);
   }
 
 }
