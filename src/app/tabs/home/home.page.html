@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="./home.page.scss">
 
 <ion-content [fullscreen] = "true">
-  <img src="../../assets/img/takout.png" alt="Imagen" class="imgTitulo"> <ion-icon name="cart-outline" class="carrinho" (click)="abrirPaginaCarrinho()"></ion-icon>
+  <img src="../../assets/img/takout.png" alt="Imagen" class="imgTitulo"> <img src="../../../assets/icon/Buy.svg" alt="Imagem" class="carrinho" (click)="abrirPaginaCarrinho()">
 
   <h5 class="titulo1">Ao seu redor</h5>
 
-  <ion-button class="placeHolder" color="medium">PLACE HOLDER</ion-button>
+  <ion-button class="placeHolder" color="medium"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116992.51398152318!2d-46.77613483749997!3d-23.603756900000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a3bd679a445%3A0x6ca3a8c4722bbc61!2sSanta%20F%C3%A9%20Mercado!5e0!3m2!1spt-BR!2sbr!4v1666019097224!5m2!1spt-BR!2sbr" width="290" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></ion-button>
 
    <h5 class="titulo2" >Categorias</h5> <h6 id="verMais"><a href="">Ver mais</a></h6>
 
@@ -13,22 +13,22 @@
   <div class="lista1">
 
     <div class="cat">
-      <ion-fab-button class="placeHolderCat" color="medium" size="large" shape="round"></ion-fab-button>
-      <ion-label class="catLaber">Categoria</ion-label>
+      <ion-fab-button class="placeHolderCat" size="large" shape="round"></ion-fab-button>
+      <ion-label class="catLaber">limpeza</ion-label>
     </div>
 
     <div class="cat">
-      <ion-fab-button class="placeHolderCat" color="medium" size="large" shape="round"></ion-fab-button>
-      <ion-label class="catLaber">Categoria</ion-label>
+      <ion-fab-button class="placeHolderCat"  size="large" shape="round"></ion-fab-button>
+      <ion-label class="catLaber">Construção</ion-label>
     </div>
 
     <div class="cat">
-      <ion-fab-button class="placeHolderCat" color="medium" size="large" shape="round"></ion-fab-button>
-      <ion-label class="catLaber">Categoria</ion-label>
+      <ion-fab-button class="placeHolderCat" size="large" shape="round"></ion-fab-button>
+      <ion-label class="catLaber">Comida</ion-label>
     </div>
 
     <div class="cat">
-      <ion-fab-button class="placeHolderCat" color="medium" size="large" shape="round"></ion-fab-button>
+      <ion-fab-button class="placeHolderCat" size="large" shape="round"></ion-fab-button>
       <ion-label class="catLaber">Categoria</ion-label>
     </div>
 
@@ -39,10 +39,13 @@
   <div class="lista2">
 
     <ion-card>
-      <ion-button class="placeHolderMV" color="medium">PLACE HOLDER</ion-button>
+      <img src="../../../assets/img/maçã.png" alt="Imagem" class="placeHolderMV" >
       <ion-card-header>
-        <ion-card-subtitle>Produto 1</ion-card-subtitle>
-        <h2 class="tituloCard">R$ 9.99</h2>
+        <ion-card-subtitle>Maçã</ion-card-subtitle>
+        <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais" (click)="adicionarCarrinho()">
+        <ion-label>
+          <h2 class="tituloCard">R$ 9.99 </h2>
+        </ion-label>
       </ion-card-header>
     </ion-card>
 
@@ -50,7 +53,10 @@
       <ion-button class="placeHolderMV" color="medium">PLACE HOLDER</ion-button>
       <ion-card-header>
         <ion-card-subtitle>Produto 2</ion-card-subtitle>
-        <h2 class="tituloCard">R$ 9.99</h2>
+        <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais">
+        <ion-label>
+          <h2 class="tituloCard">R$ 9.99 </h2>
+        </ion-label>
       </ion-card-header>
     </ion-card>
 
@@ -58,7 +64,10 @@
       <ion-button class="placeHolderMV" color="medium">PLACE HOLDER</ion-button>
       <ion-card-header>
         <ion-card-subtitle>Produto 3</ion-card-subtitle>
-        <h2 class="tituloCard">R$ 9.99</h2>
+        <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais">
+        <ion-label>
+          <h2 class="tituloCard">R$ 9.99 </h2>
+        </ion-label>
       </ion-card-header>
     </ion-card>
 
@@ -66,7 +75,10 @@
       <ion-button class="placeHolderMV" color="medium">PLACE HOLDER</ion-button>
       <ion-card-header>
         <ion-card-subtitle>Produto 4</ion-card-subtitle>
-        <h2 class="tituloCard">R$ 9.99</h2>
+        <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais">
+        <ion-label>
+          <h2 class="tituloCard">R$ 9.99 </h2>
+        </ion-label>
       </ion-card-header>
     </ion-card>
 
@@ -74,7 +86,10 @@
       <ion-button class="placeHolderMV" color="medium">PLACE HOLDER</ion-button>
       <ion-card-header>
         <ion-card-subtitle>Produto 5</ion-card-subtitle>
-        <h2 class="tituloCard">R$ 9.99</h2>
+        <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais">
+        <ion-label>
+          <h2 class="tituloCard">R$ 9.99 </h2>
+        </ion-label>
       </ion-card-header>
     </ion-card>
 
@@ -82,7 +97,10 @@
       <ion-button class="placeHolderMV" color="medium">PLACE HOLDER</ion-button>
       <ion-card-header>
         <ion-card-subtitle>Produto 6</ion-card-subtitle>
-        <h2 class="tituloCard">R$ 9.99</h2>
+        <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais">
+        <ion-label>
+          <h2 class="tituloCard">R$ 9.99 </h2>
+        </ion-label>
       </ion-card-header>
     </ion-card>
 

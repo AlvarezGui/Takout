@@ -11,10 +11,13 @@ export class HomePage implements OnInit {
   constructor(private rota: Router) { }
 
   async abrirPaginaCarrinho(){
-    this.rota.navigateByUrl(`/carrinho`)
+    this.rota.navigateByUrl(`/carrinho`);
   }
 
   ngOnInit() {
   }
 
+  adicionarCarrinho(){
+    this.rota.navigateByUrl(`/carrinho`);
+  }
 }
