@@ -8,7 +8,7 @@
    overflow: auto;
    --overflow: hidden;
 
-  
+
    &::-webkit-scrollbar {
      display: none;
    }
@@ -37,8 +37,12 @@ ion-input{
   max-width: 90%;
 }
 
-.lupa{
-  margin-left: 90%;
+.icone{
+  background-color: #dddddd;
+}
+
+.icone2{
+  background-color: #92949c;
 }
 
 .btnFiltro{
@@ -64,25 +68,41 @@ ion-input{
 
 
 ion-card{
-  width: 100%;
-  height: 100%;
-  border-radius: 15%;
+  background-color: white;
+  width: 165px;
+  height: 190px;
+  border-radius: 16%;
 
   ion-card-title{
     --color:#000000;
+    font-family: 'Poppins';
   }
 
 }
 
-.placeHolderMP{
-  width: 270px;
-  height: 123px;
+.tituloCard{
+  font-family: 'Inter';
+  font-size: 14px;
+  color: #4C95FF;
+  margin-top: -1.6ch;
 }
 
-.lista{
+.placeHolderMV{
+  width: 160px;
+  height: 100px;
+  border-radius: 16%;
+}
+
+.lista2{
+  overflow-x: hidden;
+  overflow-y: hidden;
   display: grid;
   grid-template-columns: auto auto;
   gap: 10px;
-  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 
+}
+
+.mais{
+  margin-left: 13ch;
 }
