@@ -20,4 +20,8 @@ export class HomePage implements OnInit {
   adicionarCarrinho(){
     this.rota.navigateByUrl(`/carrinho`);
   }
+
+  irPaginaProdutoPage(){
+    this.rota.navigateByUrl(`/produto-page`);
+  }
 }

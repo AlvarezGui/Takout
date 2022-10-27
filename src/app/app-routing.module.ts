@@ -38,7 +38,15 @@ const routes: Routes = [
   {
     path: 'carrinho',
     loadChildren: () => import('./carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
+  },  {
+    path: 'produto-page',
+    loadChildren: () => import('./produto-page/produto-page.module').then( m => m.ProdutoPagePageModule)
   },
+  {
+    path: 'loja-page',
+    loadChildren: () => import('./loja-page/loja-page.module').then( m => m.LojaPagePageModule)
+  },
+
 
 
 ];
