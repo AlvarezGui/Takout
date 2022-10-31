@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class LogInPage {
 
+  senha: boolean;
+
   constructor(private rota: Router) { }
 
   abrirPaginaCadastro(){
@@ -20,6 +22,10 @@ export class LogInPage {
 
   abrirPaginaHome(){
     this.rota.navigateByUrl(`/tabs/home`);
+  }
+
+  exibirOuOcultar() {
+    this.senha = !this.senha;
   }
 
 }

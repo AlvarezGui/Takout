@@ -3,17 +3,47 @@
 <ion-content [fullscreen]="true">
 
   <h3 class="titulo">Carrinho</h3>
-  <ion-icon name="arrow-back-outline" class="seta" size="large" (click)="voltarHome()"></ion-icon>
+  <ion-icon name="arrow-back-outline" class="seta" size="large" (click)='voltarHome()'></ion-icon>
 
-  <h5 class="titulo2">Detalhes</h5>
+  <div class="ion-padding">
+    <ion-list class="total">
+      <ion-item *ngFor="let p of cart" class="ion-text-warp">
+          <img src="{{p.imagem}}" alt="img do produto" class="imgProduto"/>
 
-  <ion-item lines="none" class="carrinho">
-      <ion-label text-wrap>O carrinho está vazio :( Ir para o <a (click)="voltarHome()">catalogo de lojas</a></ion-label>
-  </ion-item>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>{{p.name}}</h1>
+            <p>{{ p.amount * p.price | currency: 'BRL' }}</p>
+            <p>{{p.amount}}</p>
+
+            <ion-button class="btnExclu" size="small" color="medium" fill="clear" (click)="removeCartItem(p)">
+              <img src="../../assets/icon/Delete.png" alt="">
+            </ion-button>
+          </div>
+        </ion-label>
+        
+      </ion-item>
+
+      <ion-grid class="total">
+        <ion-row>
+          <ion-col size="9">
+            Total:
+            <ion-col class="ion-text-end">
+              {{ getTotal() | currency:'BRL'}}
+            </ion-col>
+          </ion-col>
+          
+        </ion-row>
+      </ion-grid>
+    </ion-list>
+    <ion-button expand="full" (click)="checkout()">
+      Checkout
+    </ion-button>
+  </div>
 
   <h5 class="titulo3">Método de pagamento</h5>
 
-  <ion-item>
+  <ion-item lines="none">
     <ion-label>
       <ion-icon name="wallet-outline"></ion-icon>
       Escolha seu método de pagamento

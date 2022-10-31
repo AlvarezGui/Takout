@@ -12,10 +12,10 @@
       <img src="../../assets/icon/Message.svg" alt="" class="icon">
     </ion-input>
 
-    <ion-input placeholder="Insira sua senha" type="password" mode="md" >
+    <ion-input [type]="senha ? 'text' : 'password' " placeholder="Insira sua senha"  mode="md">
       <img src="../../assets/icon/Lock.svg" class="icon">
     </ion-input>
-    <img src="../../assets/icon/Hide.svg" class="iconh">
+      <ion-icon [name]="senha ? 'eye': 'eye-off'" (click)="exibirOuOcultar()" class="iconh"></ion-icon>
 
   </form>
 
