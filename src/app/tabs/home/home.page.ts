@@ -31,14 +31,6 @@ export class HomePage implements OnInit {
     this.cartService.addProduct(products);
   }
 
-  async openCart() {
-    let modal = await this.modalCtrl.create({
-      component: CarrinhoPage,
-      cssClass: 'carrinho.css'
-    });
-    modal.present();
-  }
-
   adicionarCarrinho(){
     this.rota.navigateByUrl(`/carrinho`);
   }
