@@ -1,0 +1,82 @@
+*{
+    font-family: 'Poppins';
+    --ion-background-color: #ffffff;
+    --ion-text-color: #000000;
+  }
+
+  /* container */
+  #container {
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #8c8c8c;
+
+    margin: 0;
+  }
+
+  #container a {
+    text-decoration: none;
+  }
+
+
+  /* Carrinho */
+  .carrinho{
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 262px;
+    top: 20px;
+  }
+
+  /* foto de fundo */
+  .ftprincipal{
+    height: 350px;
+  }
+
+
+  /* Fundo da página */
+  .fundo1{
+    background-color: white;
+    border-radius: 40px;
+  }
+
+  /* Topo/tags e adicionar vavorito */
+  /* tag */
+  .topozinho{
+    display: flex;
+    margin-top: 25px;
+  }
+
+  .tag{
+    color: rgb(0, 60, 255);
+    background: rgb(130, 199, 240);
+    margin-left: 25px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+  }
+
+  /*DM e favorito*/
+  .DivMenEFa{
+    display: flex;
+  }
+
+  .tituloMerc{
+    text-align: left;
+    margin-top: -2px;
+    margin-left: 25px;
+  }

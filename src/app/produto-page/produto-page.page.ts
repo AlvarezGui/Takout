@@ -7,14 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdutoPagePage implements OnInit {
 
-  favoritado = true;
   constructor() { }
 
   ngOnInit() {
-  }
-
-  favoritar(): void {
-    this.favoritado = !this.favoritado;
   }
 
 }

@@ -1,9 +1,40 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>lojaPage</ion-title>
-  </ion-toolbar>
-</ion-header>
+<link rel="stylesheet" href="produto-page.page.scss">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+
+  
+  <!--Carrinho-->
+  <img src="../../assets/icon/BuyLight.png" alt="Imagem" class="carrinho" (click)="abrirPaginaCarrinho()">
+
+  <div>
+    <!--Imagem fundo-->
+  <img class="ftprincipal"src="../../assets/img/ImgFundoNelson.png" alt="Nelson foto">
+  </div>
+  
+  <div id="container" class="fundo1">
+    <!--Tags e favorito-->
+    <div class="topozinho">
+      <ion-chip color="primary" class="tag" [outline]="true" [disabled]="true">Popular</ion-chip>
+
+        <div class="DivMenEFav">
+          <!--DM-->
+          <ion-chip color="primary">
+            <img alt="Direct Message icon" src="../../assets/icon/DM.png" />
+          </ion-chip>
+
+          <!--Favorito-->
+          <ion-chip color="danger" id="fav" (click)="favoritar()">
+            <img [src]="favoritado ? '../../assets/icon/HeartVazio.png' : '../../assets/icon/Colacao.png'">
+          </ion-chip>
+
+        </div>
+      </div>
+      <!--Nome do mercado-->
+      <h1 class="tituloMerc"><b>Nelsonaria</b></h1>
+  </div>
+  
+
+
 
 </ion-content>

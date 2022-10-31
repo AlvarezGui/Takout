@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-loja-page',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LojaPagePage implements OnInit {
 
-  constructor() { }
+  constructor(private rota: Router) { }
 
+  favoritado = true;
   ngOnInit() {
+  }
+
+  favoritar(): void {
+    this.favoritado = !this.favoritado;
+  }
+
+  abrirPaginaCarrinho(){
+    this.rota.navigateByUrl(`/carrinho`)
   }
 
 }
