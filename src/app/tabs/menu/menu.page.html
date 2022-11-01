@@ -18,10 +18,10 @@
   <div class="MercadoAnt">
     <ion-card>
       <img src="../../../assets/img/ImgFundoNelson.png" (click)="irPaginaLoja()"alt="Imagem" class="placeHolderMV" >
-      <ion-card-header>
-        <ion-card-title>Nelsonaria</ion-card-title>
-        <img alt="Heart icon" [src]="favoritado ? '../../assets/icon/HeartVazio.png' : '../../assets/icon/Colacao.png'" class="mais" (click)="favoritar()">
-      </ion-card-header>
+      <ion-chip class="chipCard">
+        <ion-card-subtitle><p><b>Nelsonaria</b></p></ion-card-subtitle>
+        <img alt="Heart icon" [src]="favoritado ? '../../assets/icon/HeartVazio.png' : '../../assets/icon/Colacao.png'" class="corazon" (click)="favoritar()">
+      </ion-chip>
     </ion-card>
   </div>
 

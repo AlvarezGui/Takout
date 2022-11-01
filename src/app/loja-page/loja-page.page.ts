@@ -33,7 +33,7 @@ export class LojaPagePage implements OnInit {
   }
   
   voltar(){
-    this.rota.navigateByUrl(`/tabs/home`)
+    this.rota.navigateByUrl(`/tabs/menu`)
   }
 
 }

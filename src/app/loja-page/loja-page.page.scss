@@ -1,7 +1,14 @@
+
+
 *{
   font-family: 'Poppins';
   --ion-background-color: #ffffff;
   --ion-text-color: #000000;
+  --transparente:transparentize(100);  
+}
+
+ion-content {
+  width: calc(100% + 0px);
 }
 
 /* container */
@@ -193,14 +200,12 @@ ion-card{
 }
 
 .lista2{
-  overflow-x: hidden;
-  overflow-y: hidden;
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
-  -webkit-overflow-scrolling: touch;
   margin-bottom: -190px;
 }
+
 
 .mais{
   margin-left: 13ch;

@@ -67,7 +67,11 @@
       </div>
 
       <!--Produtos-->
+      
+      
       <div class="lista2">
+        <ion-slides>
+        <ion-slide> 
         <ion-card *ngFor="let p of products">
           <img src={{p.imagem}} alt="Imagem" class="placeHolderMV">
           <ion-card-header>
@@ -77,8 +81,11 @@
               <h2 class="tituloCard">{{ p.price | currency:'BRL' }}</h2>
             </ion-label>
           </ion-card-header>
-        </ion-card>
+          </ion-card>
+        </ion-slide> 
+        </ion-slides>
       </div>
+    
   </div>
   
 

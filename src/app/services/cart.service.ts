@@ -16,7 +16,7 @@ export class CartService {
   data: Product[] = [
     { id: 0, name: 'Morango', price: 15.50, amount: 1, imagem: '../../../assets/img/morango.png' },
     { id: 1, name: 'Cano PVC', price: 28.90, amount: 1, imagem: '../../../assets/img/canopvc.png' },
-    { id: 2, name: 'Maçã (500g)', price: 6.24, amount: 1, imagem: '../../../assets/img/maçã.png' },
+    { id: 2, name: 'Maçã (500g)', price: 6.24, amount: 1, imagem: '../../../assets/img/maca.png' },
     { id: 3, name: 'Papel higiênico', price: 3.76, amount: 1, imagem: '../../../assets/img/papelHigienico.png' }
   ];
 
