@@ -47,7 +47,7 @@
   <div class="lista2">
 
     <ion-card *ngFor="let p of products">
-      <img src={{p.imagem}} alt="Imagem" class="placeHolderMV" (click)="irPaginaLojaPage()" >
+      <img src={{p.imagem}} alt="Imagem" class="placeHolderMV" (click)="irPaginaProdutoPage()">
       <ion-card-header>
         <ion-card-subtitle>{{ p.name }}</ion-card-subtitle>
         <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais" (click)="addToCart(p)">

@@ -1,124 +1,130 @@
 *{
-    font-family: 'Poppins';
-    --ion-background-color: #ffffff;
-    --ion-text-color: #000000;
+  font-family: 'Poppins';
+  --ion-background-color: #ffffff;
+  --ion-text-color: #000000;
+}
+
+/* container */
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+/* foto de fundo */
+.ftprincipal{
+  position: absolute;
+  left: .1%;
+  right: 33.6%;
+  top: 1%;
+  bottom: 89.78%;
+}
+
+
+/* Fundo da página */
+.fundo1{
+  margin-top: 20%;
+  background-color: white;
+  border-radius: 40px;
+}
+
+/* Topo/tags e adicionar vavorito */
+/* tag */
+.topozinho{
+  border-radius: 40px;
+  display: flex;
+  margin-top: 25px;
+}
+
+.tag{
+  color: rgb(0, 60, 255);
+  background: rgb(130, 199, 240);
+  margin-left: 25px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+}
+
+/*DM e favorito*/
+.DivMenEFa{
+  display: flex;
+  margin-top: 39px;
+}
+
+.titulo{
+  text-align: left;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.butao{
+  margin-top: 18px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 1%;
+}
+
+.esenha{
+  margin-top: 18px;
+  margin-right: 50%;
+}
+
+.cad{
+  margin-top: 44px;
+}
+
+.icon{
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+.iconh{
+  margin-left: 200px;
+}
+
+
+ion-input{
+  background-color: rgba(173, 173, 173, 10%);
+  text-align: start;
+  border: solid 1px rgba(173, 173, 173, 10%);
+  border-radius: 10px;
+  margin-top: 16px;
+  margin-left: 5%;
+  max-width: 90%; // <--- Felicidade genuina
+}
+
+ion-label{
+  font-size: small;
   }
 
-  /* container */
-  #container {
-    text-align: center;
+  .icones{
+   margin-left: 5px;
+}
 
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  #container strong {
-    font-size: 20px;
-    line-height: 26px;
-  }
-
-  #container p {
-    font-size: 16px;
-    line-height: 22px;
-
-    color: #8c8c8c;
-
-    margin: 0;
-  }
-
-  #container a {
-    text-decoration: none;
-  }
-
-  /* foto de fundo */
-  .ftprincipal{
-    position: absolute;
-    left: .1%;
-    right: 33.6%;
-    top: 1%;
-    bottom: 89.78%;
-  }
-
-
-  /* Fundo da página */
-  .fundo1{
-    margin-top: 20%;
-    background-color: white;
-    border-radius: 40px;
-  }
-
-  /* Topo/tags e adicionar vavorito */
-  /* tag */
-  .topozinho{
-    border-radius: 40px;
-    display: flex;
-    margin-top: 25px;
-  }
-
-  .tag{
-    color: rgb(0, 60, 255);
-    background: rgb(130, 199, 240);
-    margin-left: 25px;
-    margin-right: 70px;
-    margin-bottom: 20px;
-  }
-
-  /*DM e favorito*/
-  .DivMenEFa{
-    display: flex;
-    margin-top: 39px;
-  }
-
-  .titulo{
-    text-align: left;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .butao{
-    margin-top: 18px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 1%;
-  }
-
-  .esenha{
-    margin-top: 18px;
-    margin-right: 50%;
-  }
-
-  .cad{
-    margin-top: 44px;
-  }
-
-  .icon{
-    margin-left: 8px;
-    margin-top: 2px;
-  }
-
-  .iconh{
-    margin-left: 200px;
-  }
-
-
-  ion-input{
-    background-color: rgba(173, 173, 173, 10%);
-    text-align: start;
-    border: solid 1px rgba(173, 173, 173, 10%);
-    border-radius: 10px;
-    margin-top: 16px;
-    margin-left: 5%;
-    max-width: 90%; // <--- Felicidade genuina
-  }
-
-  ion-label{
-    font-size: small;
-    }
-
-    .icones{
-     margin-left: 5px;
-  }
+.tituloProd{
+  text-align: left;
+  margin-top: -2px;
+  margin-left: 25px;
+}

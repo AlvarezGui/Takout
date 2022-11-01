@@ -15,14 +15,15 @@
   </ion-item>
 
   <h3 id="titulos"><b>Pesquisas anteriores</b></h3>
-
-  <ion-item lines="none">
-    <ion-button class="btnPR" color="medium">
-      <ion-label text-wrap class="fundinho1">
-        AQUI FICA AS SUAS PESQUISAS ANTERIORES
-      </ion-label>
-    </ion-button>
-  </ion-item>
+  <div class="MercadoAnt">
+    <ion-card>
+      <img src="../../../assets/img/ImgFundoNelson.png" (click)="irPaginaLoja()"alt="Imagem" class="placeHolderMV" >
+      <ion-card-header>
+        <ion-card-title>Nelsonaria</ion-card-title>
+        <img alt="Heart icon" [src]="favoritado ? '../../assets/icon/HeartVazio.png' : '../../assets/icon/Colacao.png'" class="mais" (click)="favoritar()">
+      </ion-card-header>
+    </ion-card>
+  </div>
 
   <h3 id="titulos"><b>Mais pesquisados</b></h3>
 
@@ -50,50 +51,7 @@
       </ion-card-header>
     </ion-card>
 
-    <ion-card>
-      <ion-button class="placeHolderMV" color="medium">PLACE HOLDER</ion-button>
-      <ion-card-header>
-        <ion-card-subtitle>Produto 3</ion-card-subtitle>
-        <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais">
-        <ion-label>
-          <h2 class="tituloCard">R$ 9.99 </h2>
-        </ion-label>
-      </ion-card-header>
-    </ion-card>
-
-    <ion-card>
-      <ion-button class="placeHolderMV" color="medium">PLACE HOLDER</ion-button>
-      <ion-card-header>
-        <ion-card-subtitle>Produto 4</ion-card-subtitle>
-        <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais">
-        <ion-label>
-          <h2 class="tituloCard">R$ 9.99 </h2>
-        </ion-label>
-      </ion-card-header>
-    </ion-card>
-
-    <ion-card>
-      <ion-button class="placeHolderMV" color="medium">PLACE HOLDER</ion-button>
-      <ion-card-header>
-        <ion-card-subtitle>Produto 5</ion-card-subtitle>
-        <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais">
-        <ion-label>
-          <h2 class="tituloCard">R$ 9.99 </h2>
-        </ion-label>
-      </ion-card-header>
-    </ion-card>
-
-    <ion-card>
-      <ion-button class="placeHolderMV" color="medium">PLACE HOLDER</ion-button>
-      <ion-card-header>
-        <ion-card-subtitle>Produto 6</ion-card-subtitle>
-        <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais">
-        <ion-label>
-          <h2 class="tituloCard">R$ 9.99 </h2>
-        </ion-label>
-      </ion-card-header>
-    </ion-card>
-
+    
   </div>
 
 </ion-content>

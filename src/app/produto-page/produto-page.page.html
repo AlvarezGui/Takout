@@ -1,1 +1,40 @@
-<h1>ola</h1>
+<link rel="stylesheet" href="produto-page.page.scss">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+<ion-content [fullscreen]="true">
+
+
+  <!--Carrinho-->
+  <img src="../../assets/icon/Buy.svg" alt="Imagem" class="carrinho" (click)="abrirPaginaCarrinho()">
+
+  <div>
+    <!--Imagem fundo-->
+  <img class="ftprincipal" src="../../assets/img/morangofundo.png" alt="Nelson foto">
+  </div>
+
+  <div id="container" class="fundo1">
+    <!--Tags e favorito-->
+    <div class="topozinho">
+      <ion-chip color="primary" class="tag" [outline]="true" [disabled]="true">Fruta</ion-chip>
+
+        <div class="DivMenEFav">
+          <!--DM-->
+          <ion-chip color="primary">
+            <img alt="Direct Message icon" src="../../assets/icon/DM.png" />
+          </ion-chip>
+
+          <!--Favorito-->
+          <ion-chip color="danger" id="fav" (click)="favoritar()">
+            <img [src]="favoritado ? '../../assets/icon/HeartVazio.png' : '../../assets/icon/Colacao.png'">
+          </ion-chip>
+
+        </div>
+      </div>
+      <!--Nome do mercado-->
+      <h1 class="tituloProd">Morango<b></b></h1>
+
+      <h6>Morango</h6>
+
+  </div>
+
+</ion-content>

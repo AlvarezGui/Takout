@@ -35,7 +35,7 @@ export class HomePage implements OnInit {
     this.rota.navigateByUrl(`/carrinho`);
   }
 
-  irPaginaLojaPage(){
-    this.rota.navigateByUrl(`/loja-page`);
+  irPaginaProdutoPage(){
+    this.rota.navigateByUrl(`/produto-page`);
   }
 }

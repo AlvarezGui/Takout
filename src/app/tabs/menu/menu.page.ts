@@ -10,11 +10,16 @@ export class MenuPage implements OnInit {
 
   constructor(private rota: Router) { }
 
+  favoritado = true;
   ngOnInit() {
   }
 
-  adicionarCarrinho(){
-    this.rota.navigateByUrl(`/carrinho`);
+  irPaginaLoja(){
+    this.rota.navigateByUrl(`/loja-page`);
+  }
+
+  favoritar(): void {
+    this.favoritado = !this.favoritado;
   }
 
 }

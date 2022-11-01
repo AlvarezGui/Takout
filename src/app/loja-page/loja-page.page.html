@@ -5,7 +5,10 @@
 
   
   <!--Carrinho-->
-  <img src="../../assets/icon/BuyLight.png" alt="Imagem" class="carrinho" (click)="abrirPaginaCarrinho()">
+  <img src="../../assets/icon/Buy.svg" alt="Imagem" class="carrinho" (click)="abrirPaginaCarrinho()">
+
+  <!--Voltar-->
+  <img src="../../assets/icon/Arrow - Left.png" class="setinha" (click)='voltar()'>
 
   <div>
     <!--Imagem fundo-->
@@ -25,13 +28,57 @@
 
           <!--Favorito-->
           <ion-chip color="danger" id="fav" (click)="favoritar()">
-            <img [src]="favoritado ? '../../assets/icon/HeartVazio.png' : '../../assets/icon/Colacao.png'">
+            <img alt="Heart icon" [src]="favoritado ? '../../assets/icon/HeartVazio.png' : '../../assets/icon/Colacao.png'">
           </ion-chip>
 
         </div>
       </div>
+
       <!--Nome do mercado-->
-      <h1 class="tituloMerc"><b>Nelsonaria</b></h1>
+      <div>
+        <h1 class="tituloMerc"><b>Nelsonaria</b></h1>
+      </div> 
+
+      <!--Distância e avaliações-->
+      <div class="DivDIsEAva">
+        <!--Distância-->
+        <ion-chip>
+          <img alt="Location icon" class="DisIco" src="../../assets/icon/Location.png" />
+          <p>1Km</p>
+        </ion-chip>
+
+        <!--avaliações-->
+        <ion-chip>
+          <img alt="Start icon" class="AvaIco" src="../../assets/icon/Star.png"> 
+          <p>4.5</p>
+        </ion-chip>
+
+      </div>
+
+      <!--Descrição da loja-->
+      <div class="descLojaPos">
+        <h6 class="descLoja">Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios. </h6>
+      </div>
+
+      <!--Descontos-->
+      <!--Descontos titulo-->
+      <div class="DescTitulo">
+        <h5 class="titulo2">Mais vendidos <img src="../../assets/icon/Discount.png" alt="desconto icon"></h5> 
+      </div>
+
+      <!--Produtos-->
+      <div class="lista2">
+        <ion-card *ngFor="let p of products">
+          <img src={{p.imagem}} alt="Imagem" class="placeHolderMV">
+          <ion-card-header>
+            <ion-card-subtitle>{{ p.name }}</ion-card-subtitle>
+            <img src="../../../assets/icon/add.svg" alt="Imagem" class="mais" (click)="addToCart(p)">
+            <ion-label>
+              <h2 class="tituloCard">{{ p.price | currency:'BRL' }}</h2>
+            </ion-label>
+          </ion-card-header>
+        </ion-card>
+      </div>
   </div>
   
 
