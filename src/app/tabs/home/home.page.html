@@ -44,7 +44,7 @@
 
   <h5 class="titulo2">Mais vendidos</h5> <h6 id="verMais"><a href="">Ver mais</a></h6>
 
-  <div class="lista2">
+  <div class="lista2" [scrollabel]="true">
 
     <ion-card *ngFor="let p of products">
       <img src={{p.imagem}} alt="Imagem" class="placeHolderMV" (click)="irPaginaProdutoPage()">

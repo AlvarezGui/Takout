@@ -7,25 +7,23 @@
   <!--Carrinho-->
   <img src="../../assets/icon/Buy.svg" alt="Imagem" class="carrinho" (click)="abrirPaginaCarrinho()">
 
+  <!--Voltar-->
+  <img src="../../assets/icon/Arrow - Left.png" class="setinha" (click)='voltar()'>
+  
   <div>
     <!--Imagem fundo-->
-  <img class="ftprincipal" src="../../assets/img/morangofundo.png" alt="Nelson foto">
+  <img class="ftprincipal" src="../../assets/img/morangofundo.png" alt="produto foto">
   </div>
 
   <div id="container" class="fundo1">
-    <!--Tags e favorito-->
+    <!--Tags e carrinho-->
     <div class="topozinho">
       <ion-chip color="primary" class="tag" [outline]="true" [disabled]="true">Fruta</ion-chip>
 
         <div class="DivMenEFav">
-          <!--DM-->
-          <ion-chip color="primary">
-            <img alt="Direct Message icon" src="../../assets/icon/DM.png" />
-          </ion-chip>
-
-          <!--Favorito-->
-          <ion-chip color="danger" id="fav" (click)="favoritar()">
-            <img [src]="favoritado ? '../../assets/icon/HeartVazio.png' : '../../assets/icon/Colacao.png'">
+          <!--carrinho-->
+          <ion-chip color="primary" class="AdCarinho">
+            <img alt="adicionar carrinho icon" src="../../assets/icon/add.svg" />
           </ion-chip>
 
         </div>
@@ -33,8 +31,42 @@
       <!--Nome do mercado-->
       <h1 class="tituloProd">Morango<b></b></h1>
 
-      <h6>Morango</h6>
+      <!--avaliações-->
+      <div class="DivDIsEAva">
+        <!--avaliações-->
+        <ion-chip>
+          <img alt="Start icon" class="AvaIco" src="../../assets/icon/Star.png"> 
+          <p>4.5</p>
+        </ion-chip>
+
+      </div>
+
+      <!--Descrição da loja-->
+      <div class="descLojaPos">
+        <h6 class="descLoja">Morango fresco. </h6>
+      </div>
 
   </div>
 
+  
+
 </ion-content>
+
+  <ion-footer>
+    <!--Adicionar e remover-->
+    <div class="FlexaoTop">
+      <div class="divADD">
+
+        <ion-icon name="add-circle-outline" (click)="mais()" class="Addmais" size="large" color="medium"></ion-icon>
+
+        <p><b>{{currentNumber}}</b></p>
+
+        <ion-icon name="remove-circle-outline" (click)="menos()" class="Addmenos" size="large" color="medium"></ion-icon>
+      </div>
+
+      <!--Butão-->
+      <div>
+        <ion-button mode="ios" class="butao">Adicionar</ion-button>
+      </div>
+    </div>
+  </ion-footer>

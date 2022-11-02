@@ -200,6 +200,8 @@ ion-card{
 }
 
 .lista2{
+  overflow-x: auto;
+  overflow-y: hidden;
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;

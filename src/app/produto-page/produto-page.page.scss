@@ -1,7 +1,13 @@
+
+
 *{
   font-family: 'Poppins';
   --ion-background-color: #ffffff;
   --ion-text-color: #000000;
+}
+
+ion-content {
+  width: calc(100% + 0px);
 }
 
 /* container */
@@ -33,19 +39,33 @@
   text-decoration: none;
 }
 
+
+/* Carrinho */
+.carrinho{
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 262px;
+  top: 17px;
+}
+
+/*Setinha*/
+.setinha{
+  position: absolute;
+  height: 14px;
+  width: 20px;
+  right: 262px;
+  top: 23px;
+}
+
 /* foto de fundo */
 .ftprincipal{
-  position: absolute;
-  left: .1%;
-  right: 33.6%;
-  top: 1%;
-  bottom: 89.78%;
+  height: 350px;
 }
 
 
 /* Fundo da página */
 .fundo1{
-  margin-top: 20%;
   background-color: white;
   border-radius: 40px;
 }
@@ -53,7 +73,6 @@
 /* Topo/tags e adicionar vavorito */
 /* tag */
 .topozinho{
-  border-radius: 40px;
   display: flex;
   margin-top: 25px;
 }
@@ -62,69 +81,98 @@
   color: rgb(0, 60, 255);
   background: rgb(130, 199, 240);
   margin-left: 25px;
-  margin-right: 70px;
+  margin-right: 90px;
   margin-bottom: 20px;
 }
 
 /*DM e favorito*/
 .DivMenEFa{
   display: flex;
-  margin-top: 39px;
 }
 
-.titulo{
-  text-align: left;
-  margin-left: 5%;
-  margin-bottom: 5%;
-  font-family: 'Poppins', sans-serif;
+.AdCarinho{
+  margin-left: 65px;
 }
 
-.butao{
-  margin-top: 18px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 1%;
-}
-
-.esenha{
-  margin-top: 18px;
-  margin-right: 50%;
-}
-
-.cad{
-  margin-top: 44px;
-}
-
-.icon{
-  margin-left: 8px;
-  margin-top: 2px;
-}
-
-.iconh{
-  margin-left: 200px;
-}
-
-
-ion-input{
-  background-color: rgba(173, 173, 173, 10%);
-  text-align: start;
-  border: solid 1px rgba(173, 173, 173, 10%);
-  border-radius: 10px;
-  margin-top: 16px;
-  margin-left: 5%;
-  max-width: 90%; // <--- Felicidade genuina
-}
-
-ion-label{
-  font-size: small;
-  }
-
-  .icones{
-   margin-left: 5px;
-}
-
-.tituloProd{
+/*titulo do mercado*/
+.tituloMerc{
   text-align: left;
   margin-top: -2px;
   margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+/*Distância e avaliações*/
+.DivDIsEAva{
+  display: flex;
+  justify-content: baseline;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}  
+
+/*Distância icone*/
+.DisIco{
+  margin-right: 5px;
+}
+
+/*Avaliações icone*/
+.AvaIco{
+  margin-right: 5px;
+}
+
+/*Descrição da loja*/
+.descLojaPos{
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.descLoja{
+  font-size: 12px;
+}
+
+ion-card{
+  background-color: white;
+  width: 165px;
+  height: 190px;
+  border-radius: 16%;
+
+  ion-card-title{
+    --color:#000000;
+    font-family: 'Poppins';
+  }
+
+}
+
+/*Footer*/
+ion-footer{
+  --ion-footer-background: #ffffff;
+  color: #000000;
+}
+
+/*Add mais e menos*/
+.FlexaoTop{
+  display: flex;
+  justify-content: center;
+}
+
+.divADD{
+  display: flex;
+  margin-right: 30px;
+}
+
+/*mais*/
+.Addmais{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/*Menos*/
+.Addmenos{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/*Butão*/
+ion-button{
+  width: 150px;
 }
